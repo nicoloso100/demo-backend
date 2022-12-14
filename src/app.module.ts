@@ -6,7 +6,7 @@ import { Text, TextSchema } from './document.schema';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/db-test'),
+    MongooseModule.forRoot('mongodb://mongo/db-test'),
     MongooseModule.forFeature([{ name: Text.name, schema: TextSchema }]),
   ],
   controllers: [AppController],
